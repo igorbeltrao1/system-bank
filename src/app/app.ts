@@ -1,10 +1,10 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { Navbar } from '../app/shared/components/navbar/navbar';
+import { CadastroCliente } from "./pages/cliente/cadastro-cliente/cadastro-cliente";
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, Navbar],
+  imports: [ Navbar, CadastroCliente],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
